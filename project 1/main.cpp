@@ -10,7 +10,7 @@ struct data
     char nama[10];
     };
 int n=0,x=0,y=0,pilih,pil,pil2,i,jb;
-data stok[10];
+data stok[10],jual[100],masuk[100];
 do{
 
 printf ("menu utama\n");
@@ -46,13 +46,13 @@ switch (pilih)
             y++;
 
             }
-        else
-            {
+        //else
+            //{
             for (i=0;i<y;i++)
                 {
                 printf ("%d\t%s\t%d\t%d\n",stok[i].in,stok[i].nama,stok[i].stok,stok[i].harga);
                 }
-            }
+            //}
         printf ("[1] barang baru\n");
         printf ("[2] Tambah stok\n");
 
@@ -80,13 +80,20 @@ switch (pilih)
                     stok[i].stok=stok[i].stok+jb;
                     }
                 }
+        }break;
+
+
+
+
+    case 2:
+     for (i=0;i<y;i++)
+        {
+        printf ("%d\t%s\t%d\t%d\n",stok[i].in,stok[i].nama,stok[i].stok,stok[i].harga);
         }
 
+printf ("nama:");
+scanf ("%s",&jual[n].nama);
 
-
-
-    //case 2:
-      //  n++;
 
     }
 }while(pilih!=0);
