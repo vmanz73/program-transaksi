@@ -1,5 +1,7 @@
 # depslib dependency file v1.0
-1495093256 source:/home/vmanz/program-transaksi/project 1/main.cpp
+1495547656 source:/home/vmanz/program-transaksi/project 1/main.cpp
 	<stdio.h>
 	<string.h>
+	<stdlib.h>
+	<time.h>
 
